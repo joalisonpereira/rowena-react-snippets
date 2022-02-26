@@ -2,6 +2,7 @@
   "name": "rowena-react-snippets",
   "displayName": "Rowena React Snippets",
   "description": "Extensions for React, React-Native & Styled Components",
+  "publisher": "joalisonpereira",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.64.0"
@@ -9,6 +10,15 @@
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joalisonpereira/rowena-react-snippets"
+  },
+  "galleryBanner": {
+    "color": "#641C84",
+    "theme": "dark"
+  },
+  "license": "MIT",
   "contributes": {
     "snippets": [
       {
