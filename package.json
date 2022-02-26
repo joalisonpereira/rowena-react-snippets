@@ -14,6 +14,10 @@
     "type": "git",
     "url": "https://github.com/joalisonpereira/rowena-react-snippets"
   },
+  "homepage": "https://github.com/joalisonpereira/rowena-react-snippets",
+  "bugs": {
+    "url": "https://github.com/joalisonpereira/rowena-react-snippets/issues"
+  },
   "galleryBanner": {
     "color": "#641C84",
     "theme": "dark"
