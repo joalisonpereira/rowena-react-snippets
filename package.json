@@ -22,6 +22,11 @@
     "color": "#641C84",
     "theme": "dark"
   },
+  "keywords": [
+    "react",
+    "typescript",
+    "styled-components"
+  ],
   "license": "MIT",
   "contributes": {
     "snippets": [
