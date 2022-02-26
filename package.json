@@ -1,0 +1,51 @@
+{
+  "name": "rowena-react-snippets",
+  "displayName": "Rowena React Snippets",
+  "description": "Extensions for React, React-Native & Styled Components",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.64.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-ts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-ts.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets-rn.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets-rn.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets-ts-rn.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets-ts-rn.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^2.6.7"
+  }
+}

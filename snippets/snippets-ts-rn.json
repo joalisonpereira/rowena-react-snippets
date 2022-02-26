@@ -1,0 +1,16 @@
+{
+  "styles": {
+    "prefix": "styled-react-native",
+    "body": [
+      "import styled from 'styled-components/native';",
+      "",
+      "interface ContainerProps{}",
+      "",
+      "export const ${1:Container} = styled.${2:View}<ContainerProps>`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create ReactJS Styled Component Typescript file"
+  }
+}

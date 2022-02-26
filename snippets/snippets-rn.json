@@ -1,0 +1,14 @@
+{
+  "styles": {
+    "prefix": "styled-react-native",
+    "body": [
+      "import styled from 'styled-components/native';",
+      "",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create React Native Styled Component file"
+  }
+}

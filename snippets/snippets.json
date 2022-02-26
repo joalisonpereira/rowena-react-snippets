@@ -1,0 +1,28 @@
+{
+  "styles": {
+    "prefix": "styled-react",
+    "body": [
+      "import styled from 'styled-components';",
+      "",
+      "export const ${1:Container} = styled.${2:div}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create ReactJS Styled Components file"
+  },
+
+  "componentFunctionalJavascript": {
+    "prefix": "rfc",
+    "body": [
+      "import { Container } from './styles';",
+      "",
+      "function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "  return <Container />;",
+      "}",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
+    ],
+    "description": "Create React Functional Component"
+  }
+}
