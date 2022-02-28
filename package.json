@@ -1,10 +1,10 @@
 {
   "name": "rowena-react-snippets",
   "displayName": "Rowena React Snippets",
-  "description": "Extensions for React, React-Native and more",
+  "description": "Extensions for React, React Native and more",
   "publisher": "joalisonpereira",
   "icon": "images/rowena.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.64.0"
   },
