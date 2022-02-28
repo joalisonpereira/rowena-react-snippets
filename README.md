@@ -79,6 +79,10 @@ Below is a list of all available Snippets and the triggers for each one. The **â
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Credits
+
+This extension is heavily inspired by [Rocketseat Snippets](https://github.com/Rocketseat/rocketseat-vscode-reactjs-snippets).
+
 <!-- CONTACT -->
 
 ## Contact
