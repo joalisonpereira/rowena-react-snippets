@@ -85,8 +85,8 @@
     "description": "Create Axios instance"
   },
 
-  "reactotronConfig": {
-    "prefix": "reactotron",
+  "reactotronReactJS": {
+    "prefix": "reactotron-react",
     "body": [
       "import Reactotron from 'reactotron-react-js';",
       "import { reactotronRedux } from 'reactotron-redux';",
@@ -106,7 +106,29 @@
       "   console.tron = tron;",
       "}"
     ],
-    "description": "Create Reactotron config"
+    "description": "Create Reactotron config for ReactJS"
+  },
+
+  "reactotronReactNative": {
+    "prefix": "reactotron-react-native",
+    "body": [
+      "import Reactotron from 'reactotron-react-native';",
+      "import { reactotronRedux } from 'reactotron-redux';",
+      "",
+      "if (__DEV__) {",
+      "  const tron = Reactotron.configure({",
+      "    name: '$1',",
+      "    port: 10000,",
+      "  })",
+      "    .use(reactotronRedux())",
+      "    .connect();",
+      "",
+      "  tron.clear();",
+      "",
+      "  console.tron = tron;",
+      "}"
+    ],
+    "description": "Create Reactotron config for React Native"
   },
 
   "useEffect": {

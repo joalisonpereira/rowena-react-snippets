@@ -1,65 +1,83 @@
-# rowena-react-snippets README
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/rocketseat.RocketseatReactJS.svg?label=Visual%20Studio%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/rocketseat.RocketseatReactJS.svg)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/rocketseat.RocketseatReactJS.svg)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
+![GitHub](https://img.shields.io/github/license/rocketseat/rocketseat-vscode-reactjs-snippets.svg)
 
-This is the README for your extension "rowena-react-snippets". After writing up a brief description, we recommend including the following sections.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/joalisonpereira">
+    <img src="https://github.com/joalisonpereira/rowena-react-snippets/blob/master/images/rowena.png?raw=true" width="80" alt="Logo">
+  </a>
+  <h2 align="center">Rowena React Snippets</h2>
+</p>
 
-## Features
+<!-- TABLE OF CONTENTS -->
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- [About the project](#about-the-project)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Supported Languages](#supported-languages)
+  - [Snippets](#snippets)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-For example if there is an image subfolder under your extension project workspace:
+<!-- ABOUT THE PROJECT -->
 
-\!\[feature X\]\(images/feature-x.png\)
+## About The Project
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+This project aims to provide a set of Snippets or shortcuts for creating components and configuration files in ReactJS/React Native applications.
 
-## Requirements
+## Getting Started
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Installation
 
-## Extension Settings
+To install an extension you can run **Command Pallete** through the command `Ctrl + Shift + P` or `Cmd + Shift + P` , type `Install Extensions` and finally press `Enter`, then search by **Rowena React Snippets** and you will find the extension.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Supported Languages
 
-For example:
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
 
-This extension contributes the following settings:
+### Snippets
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+Below is a list of all available Snippets and the triggers for each one. The **⇥** stands for the `TAB` key.
 
-## Known Issues
+| Trigger                     | Content                                                          |
+| --------------------------- | ---------------------------------------------------------------- |
+| `rfc →`                     | Create a component **Functional**                                |
+| `styled-react →`            | Create a styles file for ReactJS with **Styled Components**      |
+| `styled-react-native →`     | Create a styles file for React Native with **Styled Components** |
+| `ue →`                      | Create useEffect function                                        |
+| `uc →`                      | Create useCallback function                                      |
+| `um →`                      | Create useMemo function                                          |
+| `api →`                     | Create API instance with **Axios**                               |
+| `slice →`                   | Create a slice file with **Redux Toolkit**                       |
+| `reactotron-react →`        | Create **Reactotron** config for ReactJS                         |
+| `reactotron-react-native →` | Create **Reactotron** config for React Native                    |
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+<!-- CONTRIBUTING -->
 
-## Release Notes
+## Contributing
 
-Users appreciate release notes as you update your extension.
+1. Fork the project
+2. Create a Branch for your Feature (`git checkout -b feature/FeatureAmazing`)
+3. Add your changes (`git add .`)
+4. Commit your changes (`git commit -m 'Adding an awesome Feature!`)
+5. Push the Branch (`git push origin feature/FeatureAmazing`)
+6. Open a Pull Request
 
-### 1.0.0
+<!-- LICENSE -->
 
-Initial release of ...
+## License
 
-### 1.0.1
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Fixed issue #.
+<!-- CONTACT -->
 
-### 1.1.0
+## Contact
 
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Joalison Pereira - [Github](https://github.com/joalisonpereira) - **joalison.pereira@hotmail.com**
