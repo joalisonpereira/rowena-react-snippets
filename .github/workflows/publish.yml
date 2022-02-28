@@ -30,4 +30,4 @@ jobs:
         run: npx vsce package
 
       - name: Vsce Publish
-        run: npx vsce publish -p ${{ secrets.GH_TOKEN }}
+        run: npx vsce publish -p ${{ secrets.VSCODE_TOKEN }}
