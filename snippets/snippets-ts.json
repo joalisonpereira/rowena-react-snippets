@@ -114,11 +114,11 @@
     "body": [
       "import { combineReducers } from 'redux';",
       "",
-      "const reducers = combineReducers({",
+      "const rootReducer = combineReducers({",
       " $1",
       "});",
       "",
-      "export default reducers;"
+      "export default rootReducer;"
     ],
     "description": "Create Root Reducer file"
   },
