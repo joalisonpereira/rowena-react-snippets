@@ -12,6 +12,19 @@
     "description": "Create ReactJS Styled Components file"
   },
 
+  "reactNativeStyles": {
+    "prefix": "styled-react-native",
+    "body": [
+      "import styled from 'styled-components/native';",
+      "",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create React Native Styled Component file"
+  },
+
   "componentFunctionalJavascript": {
     "prefix": "rfc",
     "body": [
@@ -24,5 +37,93 @@
       "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}};"
     ],
     "description": "Create React Functional Component"
+  },
+
+  "slice": {
+    "prefix": "slice",
+    "body": [
+      "import { createSlice } from '@reduxjs/toolkit';",
+      "",
+      "const initialState = {",
+      " loading: false",
+      "}",
+      "",
+      "export const slice = createSlice({",
+      "name: '$1',",
+      "initialState,",
+      "reducers: {",
+      " fetch: (state) => {",
+      "  state.loading = true",
+      " }",
+      "}",
+      "})",
+      "",
+      "export const ${2:Any}Actions = slice.actions;",
+      "",
+      "export default slice.reducer;"
+    ],
+    "description": "Create Redux Toolkit Slice file"
+  },
+
+  "test": {
+    "prefix": "tt",
+    "body": ["test('it should $1', () => {", "\t$2", "});"],
+    "description": "Create test"
+  },
+
+  "api": {
+    "prefix": "api",
+    "body": [
+      "import axios from 'axios';",
+      "",
+      "const api = axios.create({",
+      " baseURL: '$1'",
+      "});",
+      "",
+      "export default api;"
+    ],
+    "description": "Create Axios instance"
+  },
+
+  "reactotronConfig": {
+    "prefix": "reactotron",
+    "body": [
+      "import Reactotron from 'reactotron-react-js';",
+      "import { reactotronRedux } from 'reactotron-redux';",
+      "",
+      "if (process.env.NODE_ENV === 'development') {",
+      "  const tron = Reactotron.configure({",
+      "   name: '$1',",
+      "   host: '127.0.0.1',",
+      "   port: 10000,",
+      "  })",
+      "  .use(reactotronRedux())",
+      "  .connect();",
+      "  ",
+      "  tron.clear();",
+      "  ",
+      "  // eslint-disable-next-line no-console",
+      "   console.tron = tron;",
+      "}"
+    ],
+    "description": "Create Reactotron config"
+  },
+
+  "useEffect": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "  $1", "}, []);"],
+    "description": "Create useEffect function"
+  },
+
+  "useCallback": {
+    "prefix": "uc",
+    "body": ["const $1 = useCallback(() => {", "  $2", "}, []);"],
+    "description": "Create useCallback function"
+  },
+
+  "useMemo": {
+    "prefix": "um",
+    "body": ["const $1 = useMemo(() => {", "  $2", "  return {};", "},[]);"],
+    "description": "Create useMemo function"
   }
 }
