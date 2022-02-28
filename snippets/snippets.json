@@ -39,6 +39,44 @@
     "description": "Create React Functional Component"
   },
 
+  "useEffect": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "  $1", "}, []);"],
+    "description": "Create useEffect function"
+  },
+
+  "useCallback": {
+    "prefix": "uc",
+    "body": ["const $1 = useCallback(() => {", "  $2", "}, []);"],
+    "description": "Create useCallback function"
+  },
+
+  "useMemo": {
+    "prefix": "um",
+    "body": ["const $1 = useMemo(() => {", "  $2", "  return {};", "},[]);"],
+    "description": "Create useMemo function"
+  },
+
+  "test": {
+    "prefix": "tt",
+    "body": ["test('it should $1', () => {", "\t$2", "});"],
+    "description": "Create test"
+  },
+
+  "api": {
+    "prefix": "api",
+    "body": [
+      "import axios from 'axios';",
+      "",
+      "const api = axios.create({",
+      " baseURL: '$1'",
+      "});",
+      "",
+      "export default api;"
+    ],
+    "description": "Create Axios instance"
+  },
+
   "slice": {
     "prefix": "slice",
     "body": [
@@ -65,24 +103,30 @@
     "description": "Create Redux Toolkit Slice file"
   },
 
-  "test": {
-    "prefix": "tt",
-    "body": ["test('it should $1', () => {", "\t$2", "});"],
-    "description": "Create test"
-  },
-
-  "api": {
-    "prefix": "api",
+  "rootReducer": {
+    "prefix": "root-reducer",
     "body": [
-      "import axios from 'axios';",
+      "import { combineReducers } from 'redux';",
       "",
-      "const api = axios.create({",
-      " baseURL: '$1'",
+      "const reducers = combineReducers({",
+      " $1",
       "});",
       "",
-      "export default api;"
+      "export default reducers;"
     ],
-    "description": "Create Axios instance"
+    "description": "Create Root Reducer file"
+  },
+
+  "rootSaga": {
+    "prefix": "root-saga",
+    "body": [
+      "import { all } from 'redux-saga/effects';",
+      "",
+      "export default function* rootSaga() {",
+      "  yield all([$1].flat());",
+      "}"
+    ],
+    "description": "Create Root Saga file"
   },
 
   "reactotronReactJS": {
@@ -112,7 +156,7 @@
   "reactotronReactNative": {
     "prefix": "reactotron-react-native",
     "body": [
-      "import Reactotron from 'reactotron-react-native';",
+      "import Reactotron, { asyncStorage } from 'reactotron-react-native';",
       "import { reactotronRedux } from 'reactotron-redux';",
       "",
       "if (__DEV__) {",
@@ -121,6 +165,7 @@
       "    port: 10000,",
       "  })",
       "    .use(reactotronRedux())",
+      "    .use(asyncStorage())",
       "    .connect();",
       "",
       "  tron.clear();",
@@ -129,23 +174,5 @@
       "}"
     ],
     "description": "Create Reactotron config for React Native"
-  },
-
-  "useEffect": {
-    "prefix": "ue",
-    "body": ["useEffect(() => {", "  $1", "}, []);"],
-    "description": "Create useEffect function"
-  },
-
-  "useCallback": {
-    "prefix": "uc",
-    "body": ["const $1 = useCallback(() => {", "  $2", "}, []);"],
-    "description": "Create useCallback function"
-  },
-
-  "useMemo": {
-    "prefix": "um",
-    "body": ["const $1 = useMemo(() => {", "  $2", "  return {};", "},[]);"],
-    "description": "Create useMemo function"
   }
 }

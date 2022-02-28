@@ -46,18 +46,21 @@ To install an extension you can run **Command Pallete** through the command `Ctr
 
 Below is a list of all available Snippets and the triggers for each one. The **⇥** stands for the `TAB` key.
 
-| Trigger                     | Content                                                          |
-| --------------------------- | ---------------------------------------------------------------- |
-| `rfc →`                     | Create a component **Functional**                                |
-| `styled-react →`            | Create a styles file for ReactJS with **Styled Components**      |
-| `styled-react-native →`     | Create a styles file for React Native with **Styled Components** |
-| `ue →`                      | Create useEffect function                                        |
-| `uc →`                      | Create useCallback function                                      |
-| `um →`                      | Create useMemo function                                          |
-| `api →`                     | Create API instance with **Axios**                               |
-| `slice →`                   | Create a slice file with **Redux Toolkit**                       |
-| `reactotron-react →`        | Create **Reactotron** config for ReactJS                         |
-| `reactotron-react-native →` | Create **Reactotron** config for React Native                    |
+| Trigger                     | Content                                                         |
+| --------------------------- | --------------------------------------------------------------- |
+| `rfc →`                     | Create a functional component                                   |
+| `styled-react →`            | Create a styles file for ReactJS (**Styled Components**)        |
+| `styled-react-native →`     | Create a styles file for React Native (**Styled Components**)   |
+| `ue →`                      | Create **useEffect** call                                       |
+| `uc →`                      | Create **useCallback** call                                     |
+| `um →`                      | Create **useMemo** call                                         |
+| `tt →`                      | Create test call                                                |
+| `api →`                     | Create _API_ instance (**Axios**)                               |
+| `slice →`                   | Create a slice file (**Redux Toolkit**)                         |
+| `root-reducer →`            | Create Root Reducer file (**Redux**)                            |
+| `root-saga →`               | Create Root Saga file (**Redux**)                               |
+| `reactotron-react →`        | Create reactotron config file for ReactJS (**Reactotron**)      |
+| `reactotron-react-native →` | Create reactotron config file for React Native (**Reactotron**) |
 
 <!-- CONTRIBUTING -->
 
