@@ -56,6 +56,8 @@ Below is a list of all available Snippets and the triggers for each one. The **�
 | `tt →`                      | Create test call                                                |
 | `api →`                     | Create API instance (**Axios**)                                 |
 | `slice →`                   | Create a slice file (**Redux Toolkit**)                         |
+| `store-react →`             | Create Store file for ReactJS (**Redux**)                       |
+| `store-react-native →`      | Create Store file for React Native (**Redux**)                  |
 | `root-reducer →`            | Create Root Reducer file (**Redux**)                            |
 | `root-saga →`               | Create Root Saga file (**Redux**)                               |
 | `reactotron-react →`        | Create reactotron config file for ReactJS (**Reactotron**)      |

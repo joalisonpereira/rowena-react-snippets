@@ -89,6 +89,72 @@
     "description": "Create API instance"
   },
 
+  "store-react": {
+    "prefix": "store-react",
+    "body": [
+      "import { compose, applyMiddleware, Store } from 'redux';",
+      "import createSagaMiddleware from 'redux-saga';",
+      "import { createStore } from '@reduxjs/toolkit';",
+      "",
+      "import slices from './slices';",
+      "import sagas from './sagas';",
+      "",
+      "const middlewares = [];",
+      "",
+      "const sagaMiddleware = createSagaMiddleware();",
+      "",
+      "middlewares.push(sagaMiddleware);",
+      "",
+      "const composer =",
+      "  process.env.NODE_ENV === 'development'",
+      "    ? // eslint-disable-next-line no-console",
+      "      compose(applyMiddleware(...middlewares), console.tron.createEnhancer())",
+      "    : compose(applyMiddleware(...middlewares));",
+      "",
+      "export type StoreState = ReturnType<typeof slices>;",
+      "",
+      "const store: Store<StoreState> = createStore(slices, undefined, composer);",
+      "",
+      "sagaMiddleware.run(sagas);",
+      "",
+      "export default store;"
+    ],
+    "description": "Create Redux Store file"
+  },
+
+  "store-react-native": {
+    "prefix": "store-react-native",
+    "body": [
+      "import { compose, applyMiddleware, Store } from 'redux';",
+      "import createSagaMiddleware from 'redux-saga';",
+      "import { createStore } from '@reduxjs/toolkit';",
+      "",
+      "import slices from './slices';",
+      "import sagas from './sagas';",
+      "",
+      "const middlewares = [];",
+      "",
+      "const sagaMiddleware = createSagaMiddleware();",
+      "",
+      "middlewares.push(sagaMiddleware);",
+      "",
+      "const composer =",
+      "  __DEV__",
+      "    ? // eslint-disable-next-line no-console",
+      "      compose(applyMiddleware(...middlewares), console.tron.createEnhancer())",
+      "    : compose(applyMiddleware(...middlewares));",
+      "",
+      "export type StoreState = ReturnType<typeof slices>;",
+      "",
+      "const store: Store<StoreState> = createStore(slices, undefined, composer);",
+      "",
+      "sagaMiddleware.run(sagas);",
+      "",
+      "export default store;"
+    ],
+    "description": "Create Redux Store file"
+  },
+
   "slice": {
     "prefix": "slice",
     "body": [
@@ -102,7 +168,7 @@
       "name: '$1',",
       "initialState,",
       "reducers: {",
-      " fetch: (state, action: PayloadAction<unknown>) => {",
+      " foo: (state, action: PayloadAction<unknown>) => {",
       "  state.loading = true",
       " }",
       "}",
