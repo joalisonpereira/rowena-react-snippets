@@ -1,6 +1,4 @@
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/rocketseat.RocketseatReactJS.svg?label=Visual%20Studio%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
-[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/rocketseat.RocketseatReactJS.svg)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/rocketseat.RocketseatReactJS.svg)](https://marketplace.visualstudio.com/items?itemName=rocketseat.RocketseatReactJS)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/joalisonpereira.rowena-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=joalisonpereira.rowena-react-snippets)
 ![GitHub](https://img.shields.io/github/license/rocketseat/rocketseat-vscode-reactjs-snippets.svg)
 
 <!-- PROJECT LOGO -->
