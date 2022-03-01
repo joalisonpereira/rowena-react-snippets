@@ -53,7 +53,7 @@
 
   "useMemo": {
     "prefix": "um",
-    "body": ["const $1 = useMemo(() => {", "  $2", "  return {};", "},[]);"],
+    "body": ["const $1 = useMemo(() => {", "  $2", "  return null;", "},[]);"],
     "description": "Create useMemo function"
   },
 
