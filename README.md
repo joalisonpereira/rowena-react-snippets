@@ -49,11 +49,12 @@ Below is a list of all available Snippets and the triggers for each one. The **�
 | `rfc →`                     | Create a functional component                                   |
 | `styled-react →`            | Create a styles file for ReactJS (**Styled Components**)        |
 | `styled-react-native →`     | Create a styles file for React Native (**Styled Components**)   |
+| `us →`                      | Create **useState** call                                        |
 | `ue →`                      | Create **useEffect** call                                       |
 | `uc →`                      | Create **useCallback** call                                     |
 | `um →`                      | Create **useMemo** call                                         |
 | `tt →`                      | Create test call                                                |
-| `api →`                     | Create _API_ instance (**Axios**)                               |
+| `api →`                     | Create API instance (**Axios**)                                 |
 | `slice →`                   | Create a slice file (**Redux Toolkit**)                         |
 | `root-reducer →`            | Create Root Reducer file (**Redux**)                            |
 | `root-saga →`               | Create Root Saga file (**Redux**)                               |

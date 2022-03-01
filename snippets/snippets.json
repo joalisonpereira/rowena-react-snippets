@@ -39,28 +39,34 @@
     "description": "Create React Functional Component"
   },
 
+  "useState": {
+    "prefix": "us",
+    "body": ["const [$1, set$2] = useState($3)"],
+    "description": "Create useState call"
+  },
+
   "useEffect": {
     "prefix": "ue",
     "body": ["useEffect(() => {", "  $1", "}, []);"],
-    "description": "Create useEffect function"
+    "description": "Create useEffect call"
   },
 
   "useCallback": {
     "prefix": "uc",
     "body": ["const $1 = useCallback(() => {", "  $2", "}, []);"],
-    "description": "Create useCallback function"
+    "description": "Create useCallback call"
   },
 
   "useMemo": {
     "prefix": "um",
     "body": ["const $1 = useMemo(() => {", "  $2", "  return null;", "},[]);"],
-    "description": "Create useMemo function"
+    "description": "Create useMemo call"
   },
 
   "test": {
     "prefix": "tt",
     "body": ["test('it should $1', () => {", "\t$2", "});"],
-    "description": "Create test"
+    "description": "Create test call"
   },
 
   "api": {
@@ -74,7 +80,7 @@
       "",
       "export default api;"
     ],
-    "description": "Create Axios instance"
+    "description": "Create API instance"
   },
 
   "slice": {
