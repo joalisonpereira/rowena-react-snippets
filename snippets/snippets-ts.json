@@ -259,8 +259,9 @@
       "    .connect();",
       "",
       "  tron.clear!();",
-      "",
-      "  console.tron = tron;",
+      "  ",
+      "  // eslint-disable-next-line no-console",
+      "   console.tron = tron;",
       "}"
     ],
     "description": "Create Reactotron config for React Native"
