@@ -4,7 +4,7 @@
   "description": "Extensions for React, React Native and more",
   "publisher": "joalisonpereira",
   "icon": "images/rowena.png",
-  "version": "1.2.1",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.64.0"
   },
