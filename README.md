@@ -60,6 +60,7 @@ Below is a list of all available Snippets and the triggers for each one. The **�
 | `store-react-native →`      | Create Store file for React Native (**Redux**)                  |
 | `root-reducer →`            | Create Root Reducer file (**Redux**)                            |
 | `root-saga →`               | Create Root Saga file (**Redux**)                               |
+| `usl →`                     | Create **useSelector** call (**Redux**)                         |
 | `reactotron-react →`        | Create reactotron config file for ReactJS (**Reactotron**)      |
 | `reactotron-react-native →` | Create reactotron config file for React Native (**Reactotron**) |
 

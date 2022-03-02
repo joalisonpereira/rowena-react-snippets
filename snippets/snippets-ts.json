@@ -206,6 +206,12 @@
     ],
     "description": "Create Root Saga file"
   },
+  
+  "useSelector": {
+    "prefix": "usl",
+    "body": ["const { $2 } = useSelector((state) => state.$1)"],
+    "description": "Create useSelector call"
+  },
 
   "reactotronReactJS": {
     "prefix": "reactotron-react",
