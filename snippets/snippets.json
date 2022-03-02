@@ -199,8 +199,14 @@
 
   "useSelector": {
     "prefix": "usl",
-    "body": ["const { $2 } = useSelector((state) => state.$1)"],
+    "body": ["const { $2 } = useSelector((state) => state.$1);"],
     "description": "Create useSelector call"
+  },
+
+  "useDispatch": {
+    "prefix": "ud",
+    "body": ["const dispatch = useDispatch();"],
+    "description": "Create useDispatch call"
   },
 
   "reactotronReactJS": {
