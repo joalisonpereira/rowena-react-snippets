@@ -4,7 +4,7 @@
     "body": [
       "import styled from 'styled-components';",
       "",
-      "interface ContainerProps{}",
+      "export interface ContainerProps{}",
       "",
       "export const ${1:Container} = styled.${2:div}<ContainerProps>`",
       "  ${3}",
@@ -19,7 +19,7 @@
     "body": [
       "import styled from 'styled-components/native';",
       "",
-      "interface ContainerProps{}",
+      "export interface ContainerProps{}",
       "",
       "export const ${1:Container} = styled.${2:View}<ContainerProps>`",
       "  ${3}",
@@ -34,9 +34,9 @@
     "body": [
       "import { Container } from './styles';",
       "",
-      "interface Props{}",
+      "export interface ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Props{}",
       "",
-      "function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}({}:Props){",
+      "function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}({}:${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Props){",
       "  return <Container />;",
       "}",
       "",
@@ -69,10 +69,10 @@
     "description": "Create useMemo call"
   },
 
-  "test": {
-    "prefix": "tt",
-    "body": ["test('it should $1', () => {", "\t$2", "});"],
-    "description": "Create test call"
+  "useNavigation": {
+    "prefix": "un",
+    "body": ["const navigation = useNavigation()"],
+    "description": "Create useNavigation call"
   },
 
   "api": {
@@ -168,7 +168,7 @@
       "name: '$1',",
       "initialState,",
       "reducers: {",
-      " foo: (state, action: PayloadAction<unknown>) => {",
+      " foo: (state, {}: PayloadAction<unknown>) => {",
       "  state.loading = true",
       " }",
       "}",
@@ -206,7 +206,7 @@
     ],
     "description": "Create Root Saga file"
   },
-  
+
   "useSelector": {
     "prefix": "usl",
     "body": ["const { $2 } = useSelector((state) => state.$1);"],

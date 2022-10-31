@@ -49,19 +49,19 @@ Below is a list of all available Snippets and the triggers for each one. The **�
 | `rfc →`                     | Create a functional component                                   |
 | `styled-react →`            | Create a styles file for ReactJS (**Styled Components**)        |
 | `styled-react-native →`     | Create a styles file for React Native (**Styled Components**)   |
+| `api →`                     | Create API instance (**Axios**)                                 |
 | `us →`                      | Create **useState** call                                        |
 | `ue →`                      | Create **useEffect** call                                       |
 | `uc →`                      | Create **useCallback** call                                     |
 | `um →`                      | Create **useMemo** call                                         |
-| `tt →`                      | Create test call                                                |
-| `api →`                     | Create API instance (**Axios**)                                 |
+| `un →`                      | Create **useNavigation** call                                   |
+| `usl →`                     | Create **useSelector** call (**Redux**)                         |
+| `ud →`                      | Create **useDispatch** call (**Redux**)                         |
 | `slice →`                   | Create a slice file (**Redux Toolkit**)                         |
 | `store-react →`             | Create Store file for ReactJS (**Redux**)                       |
 | `store-react-native →`      | Create Store file for React Native (**Redux**)                  |
 | `root-reducer →`            | Create Root Reducer file (**Redux**)                            |
 | `root-saga →`               | Create Root Saga file (**Redux**)                               |
-| `usl →`                     | Create **useSelector** call (**Redux**)                         |
-| `ud →`                      | Create **useDispatch** call (**Redux**)                         |
 | `reactotron-react →`        | Create reactotron config file for ReactJS (**Reactotron**)      |
 | `reactotron-react-native →` | Create reactotron config file for React Native (**Reactotron**) |
 
