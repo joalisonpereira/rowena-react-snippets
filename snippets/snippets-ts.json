@@ -34,7 +34,7 @@
     "body": [
       "import { Container } from './styles';",
       "",
-      "export interface ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}Props{$1}",
+      "export interface ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}Props extends ContainerProps{$1}",
       "",
       "function ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}({$2}:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}Props){",
       "  return <Container />;",
@@ -239,9 +239,11 @@
       "  })",
       "  .use(reactotronRedux())",
       "  .connect();",
-      "  ",
-      "  tron.clear!();",
-      "  ",
+      "",
+      "  if(tron.clear){",
+      "   tron.clear();",
+      "  }",
+      " ",
       "  // eslint-disable-next-line no-console",
       "   console.tron = tron;",
       "}"
