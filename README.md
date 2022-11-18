@@ -54,7 +54,7 @@ Below is a list of all available Snippets and the triggers for each one. The **�
 | `ue →`                      | Create **useEffect** call                                       |
 | `uc →`                      | Create **useCallback** call                                     |
 | `um →`                      | Create **useMemo** call                                         |
-| `un →`                      | Create **useNavigation** call                                   |
+| `un →`                      | Create **useNavigation** call (**React Navigation**))           |
 | `usl →`                     | Create **useSelector** call (**Redux**)                         |
 | `ud →`                      | Create **useDispatch** call (**Redux**)                         |
 | `slice →`                   | Create a slice file (**Redux Toolkit**)                         |
