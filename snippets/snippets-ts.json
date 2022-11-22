@@ -32,7 +32,7 @@
   "componentFunctionalTypescript": {
     "prefix": "rfc",
     "body": [
-      "import { Container } from './styles';",
+      "import { Container, ContainerProps } from './styles';",
       "",
       "export interface ${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}Props extends ContainerProps{$1}",
       "",
