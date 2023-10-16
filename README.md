@@ -85,9 +85,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Credits
 
 This extension is heavily inspired by [Rocketseat Snippets](https://github.com/Rocketseat/rocketseat-vscode-reactjs-snippets).
-
-<!-- CONTACT -->
-
-## Contact
-
-Joalison Pereira - [Github](https://github.com/joalisonpereira) - **joalison.pereira@hotmail.com**
